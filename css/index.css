@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: fit-content;
+}
+
+.navHeader {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.navMenuIcon {
+  width: 30px;
+  height: 20px;
+  background-image: url("../assets/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.5s;
+  z-index: 100;
+}
+
+.navMenuIcon--open {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-image: url("../assets/icon-close-menu.svg");
+}
+
+.navOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: #00000099;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.navOverlay--show {
+  opacity: 1;
+}
+
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #fff;
+  padding: 50px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  list-style: none;
+  transition: width 0.5s;
+  pointer-events: initial;
+}
+.navMenu--open {
+  width: 50%;
+}
+
+.navItem {
+  padding: 10px;
+}
+
+.navDropdownIcon {
+  height: 8px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  transition: transform 0.5s;
+}
+
+.navInnerMenu {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  list-style: none;
+  transition: height 0.4s, padding 0.4s;
+}
+
+.navInnerMenu--open {
+  padding: 10px;
+}
+
+.navInnerItem {
+  padding-top: 10px;
+}
+
+.navLink {
+  color: #696969;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: #141414;
+}
+
+.navLogin {
+  text-align: center;
+  margin-top: auto;
+}
+
+.navRegister {
+  padding: 8px;
+  margin: 10px 20px 0 20px;
+  text-align: center;
+  border: 2px solid #696969;
+  border-radius: 10px;
+}
+
+.navRegister:hover {
+  border-color: #141414;
+}
+.mainSectionPicture {
+  width: 100%;
+  height: 500px;
+}
+
+.mainSectionPictureImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainSectionContent {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainSectionTitle {
+  color: #141414;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mainSectionParagraph {
+  color: #696969;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btnBlack {
+  width: fit-content;
+  padding: 15px 30px;
+  background-color: #141414;
+  color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  align-self: center;
+  border: 2px solid transparent;
+}
+
+.btnBlack:hover {
+  background-color: transparent;
+  border: 2px solid #141414;
+  color: #141414;
+  font-weight: 700;
+}
+
+.mainSectionBrands {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.brandImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .navMenuIcon {
+    display: none;
+  }
+  .navMenu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navInnerMenu {
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+  }
+  .navInnerMenu--open {
+    box-shadow: 0 0 10px 0 #14141478;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .navLogin {
+    margin: 0;
+    margin-left: auto;
+  }
+  .navRegister {
+    margin: 0;
+    margin-left: 20px;
+    padding: 5px 15px;
+  }
+
+  .mainSection {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .mainSectionPicture {
+    width: auto;
+  }
+  .mainSectionPictureImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mainSectionContent {
+    height: 500px;
+    width: 40%;
+    padding: 0;
+    margin-left: 20px;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .mainSectionTitle {
+    font-size: 56px;
+    text-align: start;
+    line-height: 100%;
+  }
+  .mainSectionParagraph {
+    font-size: 20px;
+    text-align: start;
+  }
+  .btnBlack {
+    align-self: unset;
+  }
+  .mainSectionBrands {
+    margin-top: auto;
+  }
+}

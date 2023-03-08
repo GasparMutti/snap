@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navHeader">
+        <img class="navLogo" src="./assets/logo.svg" alt="Logotype of Snap" />
+        <div class="navMenuIcon"></div>
+        <section class="navOverlay"></section>
+        <ul class="navMenu">
+          <li class="navItem">
+            <span class="navDropdown navLink"
+              >Features
+              <img
+                class="navDropdownIcon"
+                src="./assets/icon-arrow-down.svg"
+                alt="Arrow to bottom"
+              />
+              <ul class="navInnerMenu">
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">
+                    <img src="./assets/icon-todo.svg" alt="Icon of to do" />
+                    To do list
+                  </a>
+                </li>
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">
+                    <img src="./assets/icon-calendar.svg" alt="Icon of to do" />
+                    Calendar
+                  </a>
+                </li>
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">
+                    <img
+                      src="./assets/icon-reminders.svg"
+                      alt="Icon of to do"
+                    />
+                    Reminders
+                  </a>
+                </li>
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">
+                    <img src="./assets/icon-planning.svg" alt="Icon of to do" />
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </span>
+          </li>
+          <li class="navItem">
+            <span class="navDropdown navLink"
+              >Company
+              <img
+                class="navDropdownIcon"
+                src="./assets/icon-arrow-down.svg"
+                alt=""
+              />
+              <ul class="navInnerMenu">
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">History</a>
+                </li>
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">Our team</a>
+                </li>
+                <li class="navInnerItem">
+                  <a class="navLink" href="#">Blog</a>
+                </li>
+              </ul>
+            </span>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">Careers</a>
+          </li>
+          <li class="navItem">
+            <a class="navLink" href="#">About</a>
+          </li>
+          <li class="navLogin">
+            <a class="navLink" href="#">Login</a>
+          </li>
+          <li class="navRegister">
+            <a class="navLink" href="#">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="mainSection">
+        <picture class="mainSectionPicture">
+          <source
+            class="mainSectionPictureImg"
+            srcset="./assets/image-hero-desktop.png"
+            media="(min-width:768px)"
+          />
+          <img
+            class="mainSectionPictureImg"
+            src="./assets/image-hero-mobile.png"
+            alt="Hero image"
+          />
+        </picture>
+        <section class="mainSectionContent">
+          <h1 class="mainSectionTitle">Make <br />remote work</h1>
+          <p class="mainSectionParagraph">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a class="btnBlack" href="#">Learn more</a>
+          <div class="mainSectionBrands">
+            <img
+              src="./assets/client-databiz.svg"
+              alt="Image of databiz brand"
+              class="brandImg"
+            /><img
+              src="./assets/client-audiophile.svg"
+              alt="Image of audiophile brand"
+              class="brandImg"
+            /><img
+              src="./assets/client-meet.svg"
+              alt="Image of meet brand"
+              class="brandImg"
+            /><img
+              src="./assets/client-maker.svg"
+              alt="Image of maker brand"
+              class="brandImg"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
