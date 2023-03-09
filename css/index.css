@@ -21,7 +21,7 @@ header {
 .navHeader {
   width: 100%;
   height: fit-content;
-  padding: 10px 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,7 +118,7 @@ header {
 }
 
 .navLink:hover {
-  color: #141414;
+  color: #000;
 }
 
 .navLogin {
@@ -135,8 +135,9 @@ header {
 }
 
 .navRegister:hover {
-  border-color: #141414;
+  border-color: #000;
 }
+
 .mainSectionPicture {
   width: 100%;
   height: 500px;
